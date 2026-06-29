@@ -22,7 +22,7 @@ function AboutPage(): JSX.Element {
               </div>
               <div className="about-creator">
                 <h3>まよい奇象報告</h3>
-                <p>日本の夏をテーマにした音声ライブラリを制作</p>
+                <p>日本の気象をテーマにした音声ライブラリを制作</p>
               </div>
               <div className="about-creator">
                 <h3>24時間対応中</h3>

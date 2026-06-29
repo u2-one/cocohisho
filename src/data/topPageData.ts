@@ -19,7 +19,7 @@ export const topPageData: TopPageData = {
       path: '/Mayoi_Anomaly_Report',
       closeImageUrl: 'images/mayoi_button_close.png',
       openImageUrl: 'images/mayoi_button_open.png',
-      description: '日本の夏をテーマにした音声ライブラリ',
+      description: '日本の気象をテーマにした音声ライブラリ',
     },
     {
       id: 'around',
