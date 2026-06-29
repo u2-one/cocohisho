@@ -1,0 +1,323 @@
+.character-detail {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.character-detail-intro {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 80px;
+    align-items: flex-start;
+}
+
+.character-detail-image {
+    flex: 0 0 400px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.character-detail-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.character-detail-info {
+    flex: 1;
+}
+
+.character-detail-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--char-text-color);
+    font-family: 'Shippori Mincho', serif;
+}
+
+.character-detail-en-name {
+    font-size: 1.2rem;
+    opacity: 0.6;
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.character-detail-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+/* Profile Table */
+.character-profile-section {
+    margin-top: 40px;
+}
+
+.character-profile-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--char-border-color);
+    padding-left: 15px;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.character-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px 30px;
+    margin-top: 20px;
+}
+
+.profile-item {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 12px 0;
+}
+
+.profile-label {
+    flex: 0 0 120px;
+    font-weight: 700;
+    opacity: 0.6;
+    font-size: 0.85rem;
+}
+
+.profile-value {
+    flex: 1;
+    font-size: 1rem;
+}
+
+/* Downloads Section */
+.character-detail-downloads {
+    border-top: 1px solid rgba(var(--char-border-color-rgb), 0.1);
+    padding-top: 60px;
+    margin-top: 80px;
+}
+
+.download-section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--char-text-color);
+    text-align: center;
+    font-family: 'Shippori Mincho', serif;
+}
+
+.download-libraries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.download-library-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(var(--char-color-rgb), 0.1);
+    padding: 30px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+}
+
+.download-library-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--char-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.library-card-top {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.library-icon {
+    flex: 0 0 80px;
+    height: 80px;
+    overflow: hidden;
+    background: rgba(var(--char-color-rgb), 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.library-icon img {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+}
+
+.library-info {
+    flex: 1;
+}
+
+.download-library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.download-library-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--char-text-color);
+}
+
+.download-library-version {
+    font-size: 0.8rem;
+    color: var(--char-text-color);
+    background: rgba(var(--char-border-color-rgb), 0.1);
+    padding: 2px 10px;
+    font-weight: 600;
+}
+
+.download-library-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.library-tag {
+    font-size: 0.75rem;
+    color: var(--char-text-color);
+    background: rgba(var(--char-color-rgb), 0.05);
+    border: 1px solid rgba(var(--char-border-color-rgb), 0.1);
+    padding: 2px 8px;
+    font-weight: 600;
+}
+
+.download-library-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+.download-library-meta {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.library-sample-video-button {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--char-btn-color, var(--char-color));
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--char-btn-color, var(--char-color));
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.library-sample-video-button:hover {
+    background: var(--char-btn-color, var(--char-color));
+    color: var(--char-btn-text-color, #ffffff);
+    border-color: var(--char-btn-color, var(--char-color));
+}
+
+.download-library-button {
+    background: var(--char-btn-color);
+    color: var(--char-btn-text-color);
+    padding: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.download-link-label {
+    display: inline-block;
+}
+
+.external-link-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.download-library-button:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.library-sample-video-button--mayoi,
+.download-library-button--mayoi {
+    border-radius: 999px;
+}
+
+.library-sample-video-button--around,
+.download-library-button--around {
+    border-radius: 0;
+    letter-spacing: 0.12em;
+}
+
+.character-detail-footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.back-link {
+    color: var(--char-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+}
+
+.back-link:hover {
+    opacity: 1;
+    border-color: var(--char-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .character-detail-intro {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .character-detail-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .character-detail-name {
+        font-size: 2.5rem;
+    }
+
+    .download-libraries-grid {
+        grid-template-columns: 1fr;
+    }
+}

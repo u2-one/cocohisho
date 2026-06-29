@@ -1,0 +1,37 @@
+:root {
+  --theme-primary: #75ff5b;
+  --theme-secondary: #dbc0c4;
+  --theme-attention: #764444;
+  --theme-background: #ffffff;
+  --theme-text: #333333;
+  --transition-speed: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', 'Inter', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+  line-height: 1.6;
+  color: var(--theme-text);
+  background-color: var(--theme-background);
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

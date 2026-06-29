@@ -1,0 +1,138 @@
+/* 24時間対応中 - Antique Mansion Theme (Bright-ish / Scoped) */
+.theme-item-around {
+  /* Deep Dark Gradient with Mansion vibe */
+  background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #0a0a0f 70%, #050508 100%);
+  color: #d1d1d1;
+  position: relative;
+}
+
+/* Low-density Arabesque Pattern */
+.theme-item-around::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Low-density Arabesque SVG (Base64) */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M60 0C60 33.137 33.137 60 0 60c33.137 0 60 26.863 60 60 0-33.137 26.863-60 60-60-33.137 0-60-26.863-60-60zM30 30c0 16.568-13.432 30-30 30 16.568 0 30 13.432 30 30 0-16.568 13.432-30 30-30-16.568 0-30-13.432-30-30zm60 60c0 16.568-13.432 30-30 30 16.568 0 30 13.432 30 30 0-16.568 13.432-30 30-30-16.568 0-30-13.432-30-30z' fill='%237a5a9e' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.theme-item-around .page-layout-title {
+  color: var(--theme-primary);
+  font-family: serif;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ELEGANT SHARP EDGES */
+.theme-item-around .world-view-container {
+  border-radius: 0 !important;
+  background: rgba(15, 15, 25, 0.85);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(122, 90, 158, 0.4);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+}
+
+.theme-item-around .character-card,
+.theme-item-around .download-library-card,
+.theme-item-around .character-detail-image,
+.theme-item-around .library-icon {
+  border-radius: 0 !important;
+  background: rgba(15, 15, 25, 0.85);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(var(--char-border-color-rgb, 122, 90, 158), 0.4);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+}
+
+/* Inner Gold Accent Line */
+.theme-item-around .world-view-container::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 1px solid rgba(122, 90, 158, 0.2);
+  pointer-events: none;
+}
+
+.theme-item-around .character-card::after,
+.theme-item-around .download-library-card::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 1px solid rgba(var(--char-border-color-rgb, 122, 90, 158), 0.2);
+  pointer-events: none;
+}
+
+.theme-item-around .world-view-title {
+  color: var(--theme-primary);
+  font-family: serif;
+  letter-spacing: 0.05em;
+}
+
+.theme-item-around .character-card-name,
+.theme-item-around .character-detail-name,
+.theme-item-around .download-section-title,
+.theme-item-around .download-library-name {
+  color: var(--char-text-color, var(--theme-primary));
+  font-family: serif;
+  letter-spacing: 0.05em;
+}
+
+.theme-item-around .download-library-button {
+  border-radius: 0 !important;
+  background: var(--char-btn-color, var(--theme-primary));
+  color: var(--char-btn-text-color, #fff);
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 4px 0px var(--char-border-color, #8a6db1);
+  transition: all 0.2s ease;
+}
+
+.theme-item-around .download-library-button:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0px var(--char-border-color, #8a6db1);
+  filter: brightness(1.05);
+}
+
+.theme-item-around .library-sample-video-button {
+  border-radius: 0 !important;
+  border-color: var(--char-btn-color, var(--char-color)) !important;
+  color: var(--char-btn-color, var(--char-color)) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.theme-item-around .library-sample-video-button:hover {
+  background: var(--char-btn-color, var(--char-color)) !important;
+  color: var(--char-btn-text-color, #fff) !important;
+  border-color: var(--char-btn-color, var(--char-color)) !important;
+}
+
+/* Deep Purple Vignette */
+.theme-item-around::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+  z-index: 5;
+}

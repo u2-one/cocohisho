@@ -1,0 +1,61 @@
+.terms-page {
+  min-height: 100vh;
+  padding: 120px 20px 60px;
+  background: #fafafa;
+  color: #333;
+}
+
+.terms-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 32px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.terms-page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.terms-section {
+  margin-bottom: 40px;
+}
+
+.terms-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  border-left: 4px solid #333;
+  padding-left: 16px;
+}
+
+.terms-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .terms-page-container {
+    padding: 40px 24px;
+    border-radius: 24px;
+  }
+}

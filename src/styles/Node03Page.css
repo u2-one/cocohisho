@@ -1,0 +1,95 @@
+/* NODE03 - Futuristic Theme (Bright / Scoped) */
+.theme-item-node03 {
+  position: relative;
+  isolation: isolate;
+  background-color: #f0f2f5;
+  background-image:
+    linear-gradient(rgba(117, 255, 91, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(117, 255, 91, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
+  color: #1a1a1a;
+}
+
+.theme-item-node03 .page-layout-title {
+  color: var(--theme-primary);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.theme-item-node03 .world-view-container {
+  border-radius: 0 !important;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(117, 255, 91, 0.5);
+  box-shadow: 4px 4px 0px rgba(117, 255, 91, 0.2);
+}
+
+.theme-item-node03 .character-card,
+.theme-item-node03 .download-library-card,
+.theme-item-node03 .library-icon,
+.theme-item-node03 .character-detail-image {
+  border-radius: 0 !important;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(var(--char-border-color-rgb, 117, 255, 91), 0.5);
+  box-shadow: 4px 4px 0px rgba(var(--char-border-color-rgb, 117, 255, 91), 0.2);
+}
+
+.theme-item-node03 .world-view-title {
+  color: var(--theme-primary);
+  font-family: 'Inter', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.theme-item-node03 .character-card-name,
+.theme-item-node03 .character-detail-name,
+.theme-item-node03 .download-section-title {
+  color: var(--char-text-color, var(--theme-primary));
+  font-family: 'Inter', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.theme-item-node03 .download-library-button {
+  background: var(--char-btn-color, var(--theme-primary));
+  color: var(--char-btn-text-color, #000);
+  font-weight: 900;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 0 !important;
+}
+
+.theme-item-node03 .download-library-button:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0px rgba(var(--char-border-color-rgb, 117, 255, 91), 0.4);
+}
+
+.theme-item-node03 .library-sample-video-button {
+  border-radius: 0 !important;
+  font-weight: 900;
+}
+
+.theme-item-node03 .library-sample-video-button:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0px rgba(var(--char-border-color-rgb, 117, 255, 91), 0.4);
+  filter: none;
+}
+
+/* Scanline Effect (background only) */
+.theme-item-node03::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.015) 50%, transparent 50%);
+  background-size: 100% 4px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.theme-item-node03 .page-layout-header,
+.theme-item-node03 .page-layout-content {
+  position: relative;
+  z-index: 1;
+}

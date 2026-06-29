@@ -1,0 +1,104 @@
+/* まよい奇象報告 - Summer Theme (Bright / Scoped) */
+.theme-item-mayoi {
+  background-color: #fdfdfd;
+  /* Subtler Multi-level Imitation Paper (模造紙) Grid */
+  background-image:
+    /* Major Grid (Thicker) - every 150px (5 cells) */
+    linear-gradient(rgba(83, 131, 195, 0.08) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, rgba(83, 131, 195, 0.08) 1.5px, transparent 1.5px),
+    /* Minor Grid (Thinner) - every 30px */
+    linear-gradient(rgba(83, 131, 195, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(83, 131, 195, 0.03) 1px, transparent 1px);
+  background-size: 150px 150px, 150px 150px, 30px 30px, 30px 30px;
+
+  color: #2c3e50;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-item-mayoi .page-layout-title {
+  color: var(--theme-primary);
+  font-family: "Hiragino Mincho ProN", serif;
+  font-weight: 800;
+  text-shadow: 1px 1px 0px #fff, 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* ARCH SHAPES for Mayoi - Ensuring pure clipping (Only for list cards) */
+.theme-item-mayoi .character-card {
+  border-radius: 200px 200px 0 0 !important;
+  overflow: hidden;
+}
+
+.theme-item-mayoi .world-view-container,
+.theme-item-mayoi .download-library-card {
+  border-radius: 60px !important;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(var(--theme-primary-rgb), 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(10px);
+}
+
+.theme-item-mayoi .world-view-title,
+.theme-item-mayoi .character-card-name,
+.theme-item-mayoi .character-detail-name,
+.theme-item-mayoi .download-section-title,
+.theme-item-mayoi .download-library-name {
+  color: var(--char-text-color, var(--theme-primary));
+  font-family: "Hiragino Mincho ProN", serif;
+}
+
+.theme-item-mayoi .download-library-button {
+  border-radius: 40px !important;
+  background: var(--char-btn-color, var(--theme-primary));
+  color: var(--char-btn-text-color, #fff);
+  border: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.theme-item-mayoi .download-library-button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.theme-item-mayoi .library-sample-video-button {
+  border-radius: 40px !important;
+  border-color: var(--char-btn-color, var(--char-color, var(--theme-primary))) !important;
+  color: var(--char-btn-color, var(--char-color, var(--theme-primary))) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 700;
+}
+
+.theme-item-mayoi .library-sample-video-button:hover {
+  background: var(--char-btn-color, var(--char-color, var(--theme-primary))) !important;
+  color: var(--char-btn-text-color, #fff) !important;
+  border-color: var(--char-btn-color, var(--char-color, var(--theme-primary))) !important;
+}
+
+/* Subtle Heat Haze overlay */
+@keyframes haze {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.theme-item-mayoi::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0%, transparent 80%);
+  animation: haze 8s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}

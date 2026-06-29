@@ -1,0 +1,128 @@
+.character-list {
+  padding: 40px 0;
+  animation: fadeIn 0.8s ease-out;
+}
+
+
+
+.character-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.character-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(var(--char-border-color-rgb), 0.2);
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+
+.character-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: var(--char-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.character-card-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background: rgba(var(--char-color-rgb), 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.character-card:hover .character-card-image img {
+  transform: scale(1.05);
+}
+
+.character-card-info {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.character-card-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--char-text-color);
+}
+
+.theme-item-mayoi .character-card-name {
+  font-family: "Hiragino Mincho ProN", serif;
+}
+
+.theme-item-around .character-card-name {
+  font-family: serif;
+  letter-spacing: 0.05em;
+}
+
+.character-card-description {
+  font-size: 0.95rem;
+  color: var(--theme-text);
+  opacity: 0.7;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.character-card-library-count {
+  font-size: 0.85rem;
+  color: var(--char-text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.character-card-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--char-color-rgb), 0.05);
+  color: var(--char-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .character-list-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

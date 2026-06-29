@@ -1,0 +1,135 @@
+.world-view {
+  padding: 40px 0;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.world-view-container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(var(--theme-primary-rgb), 0.1);
+  border-radius: 0;
+  padding: 60px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.world-view-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--theme-primary);
+  white-space: pre-line;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.world-view-description {
+  font-size: 1.25rem;
+  color: var(--theme-text);
+  opacity: 0.8;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.world-view-content {
+  font-size: 1.1rem;
+  color: var(--theme-text);
+  line-height: 2.2;
+  text-align: justify;
+  opacity: 0.9;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--theme-text);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(var(--theme-primary-rgb), 0.1);
+  text-decoration: none;
+}
+
+.social-link svg,
+.social-link img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.social-link.niconico svg {
+  transform: translateY(-1px);
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+  background: var(--theme-primary);
+  color: var(--theme-background);
+  border-color: var(--theme-primary);
+  box-shadow: 0 10px 20px rgba(var(--theme-primary-rgb), 0.2);
+}
+
+.social-link.niconico:hover svg {
+  transform: translateY(-1px);
+}
+
+.social-link.twitter:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.social-link.youtube:hover {
+  background: #FF0000;
+  color: #ffffff;
+}
+
+.social-link.niconico:hover {
+  background: #252525;
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .world-view-container {
+    padding: 40px 24px;
+  }
+
+  .world-view-title {
+    font-size: 1.8rem;
+  }
+
+  .world-view-description {
+    font-size: 1rem;
+  }
+
+  .world-view-content {
+    font-size: 0.95rem;
+    line-height: 2;
+  }
+}
