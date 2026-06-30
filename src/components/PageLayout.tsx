@@ -51,7 +51,7 @@ function PageLayout({ children, theme, pageName, data, basePath, themeId }: Page
         <h1 className="page-layout-title">{data.pageName}</h1>
         <nav className="page-layout-nav">
           <Link to={base} className={isHome ? 'active' : ''}>
-            説明
+            WELCOME
           </Link>
           <Link to={`${base}/characters`} className={location.pathname.includes('/characters') ? 'active' : ''}>
             ライブラリ一覧

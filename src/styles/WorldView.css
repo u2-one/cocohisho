@@ -26,6 +26,7 @@
 .world-view-description {
   font-size: 1.25rem;
   color: var(--theme-text);
+  white-space: pre-line;
   opacity: 0.8;
   margin-bottom: 40px;
   text-align: center;
@@ -48,7 +49,7 @@
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 }
 
 .social-link {

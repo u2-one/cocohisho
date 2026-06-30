@@ -41,6 +41,26 @@
   opacity: 0.8;
 }
 
+.terms-list {
+  margin: 16px 0 0 24px;
+  padding: 0;
+}
+
+.terms-list li {
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.terms-list.ordered {
+  list-style-type: decimal;
+}
+
+.terms-list:not(.ordered) {
+  list-style-type: disc;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

@@ -14,8 +14,8 @@ export const aroundData: PageData = {
   youtubeUrl: 'https://www.youtube.com/@%E8%91%A6%E6%97%A9',
   niconicoUrl: 'https://www.nicovideo.jp/user/141658499',
   worldView: {
-    title: 'Coming Soon......',
-    description: '',
+    title: '当主、使用人共々\nご依頼をお待ちしております。',
+    description: '初めてのご連絡からでもご依頼を承ります。\nお気軽にご連絡くださいませ。',
   },
   characters: [
     {
@@ -23,7 +23,7 @@ export const aroundData: PageData = {
       name: '東眞',
       JPname: '東眞',
       ENname: 'Azuma',
-      description: 'Coming soon......',
+      description: 'とある屋敷の給仕長、いつも困ったように笑っている。気苦労の多い様子だが、それなりに日々を楽しんでいるようだ。',
       imageUrl: 'assets/images/around/azuma_normal/azuma_full.png',
       listImageUrl: 'assets/images/around/azuma_normal/azuma_icon.png',
       detailImageUrl: 'assets/images/around/azuma_normal/azuma_full.png',

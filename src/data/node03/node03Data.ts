@@ -16,8 +16,8 @@ export const node03Data: PageData = {
   youtubeUrl: 'https://www.youtube.com/c/yuniONe',
   niconicoUrl: 'https://www.nicovideo.jp/user/87696577',
   worldView: {
-    title: 'Coming soon......',
-    description: '',
+    title: 'お、っと、博士……？',
+    description: '歌は俺たちが頑張りますから、……博士はエレキギターを弾いててくださいね。',
   },
   characters: [
     {
