@@ -9,7 +9,7 @@ const creators = [
   {
     name: 'SüA',
     description: '"NODE03"の管理者。\nこのサイト作った。デザインもした。たまに絵も描くことがある。\nサイトに問題があったらひとまず私宛に連絡ください。',
-    icon: '/assets/images/node03/sua_icon.png',
+    icon: 'assets/images/node03/sua_icon.png',
     theme: 'node03',
     social: {
       twitterUrl: node03Data.twitterUrl,
@@ -20,7 +20,7 @@ const creators = [
   {
     name: '蝸牛',
     description: '"まよい奇象報告"の管理者。\n絵とか動画とかよく担当してる。このサイトの挿し絵も描いてくれた。',
-    icon: '/assets/images/mayoi/kagyuu_icon.png',
+    icon: 'assets/images/mayoi/kagyuu_icon.png',
     theme: 'mayoi',
     social: {
       twitterUrl: mayoiData.twitterUrl,
@@ -31,7 +31,7 @@ const creators = [
   {
     name: '葦早',
     description: '"24時間対応中"の管理者。\nMIXとかMIXとかMIXとか担当していることが多い。中心人物。',
-    icon: '/assets/images/around/ashibaya_icon.png',
+    icon: 'assets/images/around/ashibaya_icon.png',
     theme: 'around',
     social: {
       twitterUrl: aroundData.twitterUrl,
