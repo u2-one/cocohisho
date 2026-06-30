@@ -6,7 +6,7 @@ export const UKA_VOICES: VoiceLibrary[] = [
     name: 'Normal',
     version: '1.0',
     description: '落ち着いた女性声。',
-    downloadUrl: '#',
+    downloadUrl: 'https://bowlroll.net/file/355785',
     sampleYoutubeUrl: '',
     releaseDate: '2026-06-30',
     iconUrl: 'assets/images/mayoi/uka_normal/uka_icon3.png', // Default icon
