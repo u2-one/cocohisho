@@ -10,7 +10,7 @@
   margin: 0 auto;
   background: #ffffff;
   padding: 60px;
-  border-radius: 32px;
+  border-radius: 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
   animation: fadeInUp 0.8s ease-out;
 }
@@ -56,6 +56,6 @@
 @media (max-width: 768px) {
   .terms-page-container {
     padding: 40px 24px;
-    border-radius: 24px;
+    border-radius: 0;
   }
 }
