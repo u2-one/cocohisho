@@ -1,7 +1,7 @@
 .about-page {
   min-height: 100vh;
   padding: 120px 20px 60px;
-  background: var(--theme-background);
+  background: #fafafa;
   color: var(--theme-text);
   font-family: inherit;
 }
